@@ -1,0 +1,23 @@
+{
+  "productList": [
+    {
+      "productName": "Samsung",
+      "category": "mobile",
+      "freshness": "New",
+      "price": 6000,
+      "description": "new product",
+      "date": "2022-08-22T18:30:00.000Z",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
