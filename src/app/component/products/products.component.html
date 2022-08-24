@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a (click)="filter('')" class="navbar-brand"><i class="fa-solid fa-shop"></i>&nbsp;All Products</a>
+      <a (click)="filter('electronics')" class="navbar-brand"><i class="fa-solid fa-shop"></i>&nbsp;Electronics</a>
+      <a (click)="filter('fashion')" class="navbar-brand"><i class="fa-solid fa-shop"></i>&nbsp;Fashion</a>
+      <a (click)="filter('jewelery')" class="navbar-brand"><i class="fa-solid fa-shop"></i>&nbsp;Jewllery</a>
+    </div>
+  </nav>
+
+ <div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList | filter:searchKey:'title'">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap; overflow:hidden;text-overflow:ellipsis;max-width:100ch;">{{item.title}}</h5>
+                <p style="white-space: nowrap; overflow:hidden;text-overflow:ellipsis;max-width:100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong> {{item.price | currency}}</p>
+                <button class="btn btn-primary" (click)="addtocart(item)">Add to Cart</button>
+            </div>
+        </ng-container>
+    </div>
+ </div>

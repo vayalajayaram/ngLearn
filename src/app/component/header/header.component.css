@@ -1,0 +1,7 @@
+.search-icon{
+    top: 26px;
+    position: absolute;
+    z-index: 10;
+    right: 41%;
+    color: blue;
+}
