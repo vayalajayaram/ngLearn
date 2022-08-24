@@ -23,13 +23,15 @@ export class SignupComponent implements OnInit {
   }
   signUp(){
     console.log(this.signupForm.value);
-    this.http.post<any>("http://localhost/rest-api/users/create",this.signupForm.value)
-    .subscribe(res=>{
+    this.http.post<any>("http://localhost:3000/register",this.signupForm.value)
+    .subscribe({
+      next:(res)=>{
       alert("Signup Successfull");
       this.signupForm.reset();
       this.router.navigate(['login']);
-    },err=>{
+    },error:(err)=>{
       alert("Something went wrong");
+    }
     })
   }
 

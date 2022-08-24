@@ -20,9 +20,11 @@ public loginForm!: FormGroup
   }
 
   login(){
-    this.http.get<any>("http://localhost/rest-api/users/read").subscribe(res =>{
+    this.http.get<any>("http://localhost:3000/register/")
+    .subscribe({
+      next:(res)=>{
       const user = res.find((a:any)=>{
-        return a.email === this.loginForm.value.EMail && a.Password === this.loginForm.value.Password
+        return a.EMail === this.loginForm.value.EMail && a.Password === this.loginForm.value.Password
       })
       if(user){
         alert("Login Success");
@@ -31,8 +33,9 @@ public loginForm!: FormGroup
       }else{
         alert("User not found");
       }
-    },err=>{
+    },error:(err)=>{
       alert("Something went wrong!!")
+    }
     })
   }
 
