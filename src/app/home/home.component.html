@@ -1,0 +1,15 @@
+<p [ngClass]="classname">{{homename | uppercase}}!</p>
+
+<h4 [style.color]="color" [style.font-size]="font">My salary is: {{salary | currency:'INR'}}</h4>
+
+<br/>
+
+<button (click)="getFunction('send message...!')">Click Me</button>
+
+<br/>
+
+<input [value]="isdisabled" [disabled]="isdisabled" #txt (change)="getFunction(txt.value)">
+
+<br><br>
+
+<input [(ngModel)]="homename">
