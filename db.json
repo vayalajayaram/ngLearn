@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "firstName": "jayaram",
+      "lastName": "vayala",
+      "email": "jayaram@gmail.com",
+      "password": "12345",
+      "address": "hyderabad",
+      "city": "hyd",
+      "state": "ts",
+      "postalCode": "500062",
+      "id": 1
+    },
+    {
+      "firstName": "yashu",
+      "lastName": "vayala",
+      "email": "yashu@gmail.com",
+      "password": "12345",
+      "address": "hyd",
+      "city": "hyd",
+      "state": "ts",
+      "postalCode": "500062",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

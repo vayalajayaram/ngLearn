@@ -1,0 +1,24 @@
+.login-container {
+  padding: 24px 16px;
+}
+.example-form {
+    margin: auto;
+    width: 50%;
+    padding: 20px 16px;
+    border: 1px solid #ccc;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  h1{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .example-button-row {
+    display: table-cell;
+    width: 105px;
+  }
+  

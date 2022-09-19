@@ -1,0 +1,16 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    width: 75px;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  
